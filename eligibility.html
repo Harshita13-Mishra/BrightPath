@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Eligibility Checker | BrightPath Overseas</title>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Eligibility CSS -->
+    <link rel="stylesheet" href="css/eligibility.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                <a href="index.html">BrightPath <span>Overseas</span></a>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="universities.html">Universities</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li>
+                    <a href="contact.html" class="nav-btn">
+                        Free Counselling
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="eligibility-hero">
+
+        <div class="hero-content">
+
+            <span class="section-tag">
+                CHECK YOUR ELIGIBILITY
+            </span>
+
+            <h1>
+                Check Your <span>Study Abroad Eligibility</span>
+            </h1>
+
+            <p>
+                Enter your academic and IELTS details to get a
+                preliminary eligibility assessment for studying abroad.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ELIGIBILITY FORM ================= -->
+
+    <section class="eligibility-section">
+
+        <div class="section-heading">
+
+            <span class="section-tag">
+                ELIGIBILITY CHECKER
+            </span>
+
+            <h2>
+                Find Out If You Qualify
+            </h2>
+
+            <p>
+                Provide your basic academic details below.
+            </p>
+
+        </div>
+
+
+        <div class="eligibility-box">
+
+            <!-- Academic Percentage -->
+
+            <div class="eligibility-group">
+
+                <label for="academicPercentage">
+                    Academic Percentage
+                </label>
+
+                <input
+                    type="number"
+                    id="academicPercentage"
+                    placeholder="Enter percentage"
+                    min="0"
+                    max="100"
+                >
+
+            </div>
+
+
+            <!-- IELTS Score -->
+
+            <div class="eligibility-group">
+
+                <label for="ieltsScore">
+                    IELTS Score
+                </label>
+
+                <input
+                    type="number"
+                    id="ieltsScore"
+                    placeholder="Example: 6.5"
+                    min="0"
+                    max="9"
+                    step="0.5"
+                >
+
+            </div>
+
+
+            <!-- Degree -->
+
+            <div class="eligibility-group">
+
+                <label for="degree">
+                    Degree
+                </label>
+
+                <select id="degree">
+
+                    <option value="">
+                        Select Degree
+                    </option>
+
+                    <option value="Bachelor's">
+                        Bachelor's
+                    </option>
+
+                    <option value="Master's">
+                        Master's
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- Country -->
+
+            <div class="eligibility-group">
+
+                <label for="country">
+                    Preferred Country
+                </label>
+
+                <select id="country">
+
+                    <option value="">
+                        Select Country
+                    </option>
+
+                    <option value="Canada">
+                        Canada
+                    </option>
+
+                    <option value="UK">
+                        UK
+                    </option>
+
+                    <option value="Australia">
+                        Australia
+                    </option>
+
+                    <option value="USA">
+                        USA
+                    </option>
+
+                    <option value="New Zealand">
+                        New Zealand
+                    </option>
+
+                    <option value="Germany">
+                        Germany
+                    </option>
+
+                    <option value="Ireland">
+                        Ireland
+                    </option>
+
+                    <option value="France">
+                        France
+                    </option>
+
+                    <option value="UAE">
+                        UAE
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- Button -->
+
+            <button
+                type="button"
+                class="eligibility-btn"
+                onclick="checkEligibility()"
+            >
+                Check Eligibility →
+            </button>
+
+        </div>
+
+
+        <!-- ================= RESULT ================= -->
+
+        <div
+            id="eligibilityResult"
+            class="eligibility-result"
+        ></div>
+
+    </section>
+
+
+    <!-- ================= IMPORTANT NOTE ================= -->
+
+    <section class="eligibility-disclaimer">
+
+        <h3>
+            Important Note
+        </h3>
+
+        <p>
+            This eligibility checker provides only a preliminary
+            assessment. Final admission and visa eligibility depend
+            on the university, course, country and official
+            immigration requirements.
+        </p>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <!-- About -->
+
+            <div class="footer-box">
+
+                <h3>
+                    BrightPath Overseas
+                </h3>
+
+                <p>
+                    Helping students achieve their dreams of
+                    studying abroad through expert guidance
+                    and personalized support.
+                </p>
+
+            </div>
+
+
+            <!-- Quick Links -->
+
+            <div class="footer-box">
+
+                <h4>
+                    Quick Links
+                </h4>
+
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="destinations.html">Destinations</a>
+                <a href="universities.html">Universities</a>
+                <a href="courses.html">Courses</a>
+
+            </div>
+
+
+            <!-- Services -->
+
+            <div class="footer-box">
+
+                <h4>
+                    Services
+                </h4>
+
+                <a href="services.html">
+                    Career Counselling
+                </a>
+
+                <a href="services.html">
+                    University Selection
+                </a>
+
+                <a href="services.html">
+                    Application Assistance
+                </a>
+
+                <a href="services.html">
+                    Visa Assistance
+                </a>
+
+            </div>
+
+
+            <!-- Contact -->
+
+            <div class="footer-box">
+
+                <h4>
+                    Contact Us
+                </h4>
+
+                <p>📍 India</p>
+
+                <p>📞 +91 XXXXX XXXXX</p>
+
+                <p>
+                    ✉ info@brightpathoverseas.com
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 BrightPath Overseas.
+                All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="js/script.js"></script>
+
+    <script src="js/eligibility.js"></script>
+
+</body>
+
+</html>

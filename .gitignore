@@ -1,0 +1,45 @@
+# Backend
+backend/target/
+backend/.mvn/
+backend/*.iml
+
+# IDE
+.idea/
+*.iml
+.settings/
+.classpath
+.project
+.factoryPath
+*.swp
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+hs_err_pid*
+
+# Logs
+*.log
+
+# Node
+node_modules/
+.next/
+out/
+
+# Env
+.env
+.env.local
+.env.*.local
+
+# Uploads
+uploads/
+
+# Maven
+target/
+!.mvn/wrapper/maven-wrapper.jar
